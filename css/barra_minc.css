@@ -1,0 +1,2004 @@
+/*@import url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/css/custom.css?browserId=firefox&themeId=mincinternetlf6_1ga2_WAR_mincinternetlf6_1ga2theme&languageId=pt_BR&b=6120&t=1365516338000);
+*/
+@import url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/css/custom_common.css?browserId=firefox&themeId=mincinternetlf6_1ga2_WAR_mincinternetlf6_1ga2theme&languageId=pt_BR&b=6120&t=1365516338000);
+@import url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/css/color_schemes/green.css?browserId=firefox&themeId=mincinternetlf6_1ga2_WAR_mincinternetlf6_1ga2theme&languageId=pt_BR&b=6120&t=1365516338000);
+@import url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/css/color_schemes/orange.css?browserId=firefox&themeId=mincinternetlf6_1ga2_WAR_mincinternetlf6_1ga2theme&languageId=pt_BR&b=6120&t=1365516338000);
+@import url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/css/webfontkit/fonte.css);
+
+
+/* ---------- Base styles ---------- */
+body{
+    margin-top: 93px;
+}
+#geral{
+    font-size: 11px; 
+    display: none;
+}
+
+
+hr, .separator {
+  border-color: #BFBFBF transparent #FFF;
+  border-style: solid;
+  border-width: 1px 0; }
+
+#wrapper {
+  background: none;
+  margin: 0 auto;
+  max-width: 90%;
+  min-width: 960px;
+  position: relative; }
+
+.ie6 #wrapper {
+  width: 90%; }
+
+#banner {
+  background: none;
+  height: auto;
+  margin-top: 1.4em;
+  position: relative; }
+
+.site-title .site-name {
+  background: #555555 url(../images/common/site_icon.png) no-repeat 15px 50%;
+  color: #FFF;
+  display: block;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 15px 0 0 20px;
+  padding: 7px 17px 7px 40px;
+  position: relative;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5); }
+
+.page-template .site-title .site-name {
+  background-image: url(../images/common/page_template.png); }
+
+.site-template .site-title .site-name {
+  background-image: url(../images/common/site_template.png); }
+
+.company-site .site-title .site-name {
+  background-image: url(../images/common/folder.png); }
+
+.organization-site .site-title .site-name {
+  background-image: url(../images/common/organization_icon_white.png); }
+
+.user-site .site-title .site-name {
+  background-image: url(../images/common/user_icon_white.png); }
+
+.private-page .site-title .site-name:after {
+  background-image: url(../images/common/key_small.png);
+  content: '';
+  display: block;
+  height: 10px;
+  left: 24px;
+  position: absolute;
+  top: 50%;
+  width: 10px; }
+
+#skip-to-content:focus {
+  clip: rect(auto auto auto auto);
+  right: 0;
+  z-index: 200; }
+
+#sign-in {
+  background: url(/html/themes/classic/images/common/key.png) no-repeat 3px 50%;
+  font-weight: bold;
+  padding: 5px 5px 5px 25px;
+  position: absolute;
+  right: 0;
+  top: -1.2em; }
+
+.ie6 #banner {
+  height: 1%; }
+
+.ie6 #banner h1.logo {
+  height: 1%; }
+
+/* ---------- Main navigation ---------- */
+#navigation {
+  background: #414445 url(http://www.cultura.gov.br/html/themes/classic/images/navigation/bg.png) repeat-x 0 0;
+  clear: both;
+  margin: 0 auto 5px;
+  min-height: 2.2em;
+  padding: 0 5px;
+  position: relative;
+  z-index: 1; }
+
+#navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 3px; }
+
+.ie7 #navigation ul {
+  padding: 2px; }
+
+#navigation li, #navigation a {
+  display: inline-block; }
+
+.ie6 #navigation li, .ie7 #navigation li, .ie6 #navigation a, .ie7 #navigation a {
+  display: inline;
+  zoom: 1;
+  z-index: 200; }
+
+#navigation li {
+  position: relative;
+  vertical-align: top; }
+
+#navigation a {
+  color: #FFF;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 1px;
+  padding: 3px 15px;
+  text-decoration: none; }
+
+.ie6 #navigation a, .ie7 #navigation a {
+  padding: 4px 15px; }
+
+#navigation .yui3-dd-drop a {
+  cursor: move; }
+
+#navigation .selected a, #navigation li.hover a, #navigation a:hover, #navigation a:focus, #navigation .child-menu li a, #navigation .yui3-dd-dragging, .lfr-navigation-proxy {
+  background: #313334;
+  color: #FFF;
+  outline: 0;
+  text-shadow: -1px -1px black; }
+
+#navigation li.hover .child-menu {
+  background: #1E2529;
+  display: block;
+  position: absolute;
+  width: 200px;
+  z-index: 250; }
+
+.ie6 #navigation ul.child-menu-visible, .ie6 #navigation li.hover .child-menu, .ie7 #navigation ul.child-menu-visible, .ie7 #navigation li.hover ul.child-menu {
+  left: 0;
+  top: 25px; }
+
+#navigation .child-menu {
+  display: none; }
+
+#navigation .child-menu li {
+  border-width: 0 0 1px;
+  display: block;
+  float: none;
+  margin: 0; }
+
+#navigation .child-menu li a {
+  cursor: pointer !important; }
+
+.ie7 #navigation .child-menu li a {
+  zoom: 1; }
+
+#navigation .child-menu li a:hover, #navigation li a.active {
+  background-color: #020509; }
+
+#navigation .child-menu .selected a {
+  background: #020509 url(http://www.cultura.gov.br/html/themes/classic/images/navigation/bullet_selected.png) no-repeat 5px 50%; }
+
+.nav-menu-style-arrows ul {
+  list-style-image: url(http://www.cultura.gov.br/html/themes/classic/images/navigation/bullet_selected.png); }
+
+/* ---------- Portlet wrapper and icons ---------- */
+.portlet {
+  background-color: #EEF0F2;
+  border: 1px solid #C8C9CA;
+  margin: 0 0 10px;
+  padding: 3px;
+  text-align: left; }
+
+.portlet-topper {
+  background: #d4d4d4 url(http://www.cultura.gov.br/html/themes/classic/images/portlet/header_bg.png) repeat-x 0 0;
+  border: 1px solid;
+  border-color: #C8C9CA #9E9E9E #9E9E9E #C8C9CA;
+  font-size: 1.1em; }
+
+.portlet-title {
+  float: none;
+  font-weight: bold;
+  min-width: 50%;
+  padding: 5px;
+  text-shadow: 1px 1px #FFF; }
+
+.signed-in.controls-visible .portlet-title {
+  padding-right: 80px; }
+
+.lfr-portlet-title-editable {
+  margin-top: -4px;
+  z-index: 9999; }
+
+.ie .lfr-portlet-title-editable {
+  margin-top: -6px; }
+
+.lfr-portlet-title-editable-content {
+  padding: 0; }
+
+.ie .lfr-portlet-title-editable-content {
+  margin-top: 4px; }
+
+.portlet-icons {
+  float: none; }
+
+.portlet-icons .portlet-close-icon {
+  border-width: 0; }
+
+.page-maximized .portlet-icons {
+  font-size: 11px; }
+
+.ie .portlet-title {
+  padding-bottom: 5px; }
+
+.ie6 .portlet-topper {
+  zoom: 1; }
+
+/* ---------- Footer ---------- */
+#footer {
+  text-align: right; }
+
+/* ---------- Site breadcrumbs ---------- */
+.site-breadcrumbs {
+  margin: 0 0 5px;
+  width: auto; }
+
+.site-breadcrumbs ul {
+  background-color: #FFF;
+  border: 1px solid #DEDEDE;
+  border-color: #C0C2C5;
+  margin: 0; }
+
+.site-breadcrumbs li {
+  background-image: none;
+  margin-right: 0;
+  padding-left: 0.75em;
+  padding-right: 0; }
+
+.site-breadcrumbs li span {
+  background: url(http://www.cultura.gov.br/html/themes/classic/images/common/breadcrumbs.png) no-repeat 100% 50%;
+  display: block;
+  padding: 0.5em 15px 0.5em 0; }
+
+.site-breadcrumbs li span a {
+  text-decoration: none; }
+
+.site-breadcrumbs li.first a {
+  color: #369;
+  font-weight: bold; }
+
+.site-breadcrumbs li.last a {
+  color: #4B5567;
+  font-size: 1.3em; }
+
+.site-breadcrumbs .last {
+  font-size: 1em;
+  margin-top: 0;
+  padding-right: 0; }
+
+.site-breadcrumbs .last span {
+  background-image: none;
+  padding: 0; }
+
+/* ---------- Hudcrumbs ---------- */
+.lfr-hudcrumbs {
+  position: fixed;
+  top: 0;
+  z-index: 440; }
+
+.lfr-hudcrumbs ul {
+  background: #414445;
+  background: rgba(0, 0, 0, 0.8); }
+
+.lfr-hudcrumbs .breadcrumbs li a, .lfr-hudcrumbs .breadcrumbs li span {
+  color: #FFF; }
+
+.lfr-hudcrumbs li span {
+  background-image: url(http://www.cultura.gov.br/html/themes/classic/images/common/breadcrumbs_hud.png); }
+
+/* ---------- Misc. ---------- */
+.lfr-panel-container {
+  background-color: transparent; }
+
+.aui-combobox .aui-field-input {
+  padding: 4px 3px 3px;
+  font-size: 11px;
+  height: 15px; }
+
+.aui-combobox .aui-field {
+  float: left;
+  line-height: 0; }
+
+.lfr-portlet-title-editable-content .aui-field {
+  float: none;
+  display: inline; }
+
+/* ---------- Extras ---------- */
+#banner .site-name {
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white;
+  -o-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white; }
+
+.portlet-borderless-bar {
+  -moz-border-radius: 20px;
+  -moz-box-shadow: inset 0 1px 3px #000;
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: inset 0 1px 3px #000;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 3px #000; }
+
+.portlet-topper {
+  -moz-box-shadow: 1px 1px 0 #FFF;
+  -webkit-box-shadow: 1px 1px 0 #FFF;
+  box-shadow: 1px 1px 0 #FFF; }
+
+#banner .site-name {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white;
+  -o-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 1px 1px 1px white; }
+
+#navigation li.selected a {
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8); }
+
+.aui-combobox .aui-toolbar-first {
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+
+/* ---------- Base styles ---------- */
+#geral {
+  font: 62.5%/1.4 Verdana, Arial, Helvetica, sans-serif;
+}
+
+.journal-content-article {
+  font-size: 1.3em; }
+
+#geral p {
+  margin-bottom: 1em; }
+
+#geral a {
+  color: #393939;
+  transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s; }
+
+#geral a:hover {
+  color: #5F9621;
+  text-shadow: 0px 0px 2px #cec; }
+
+#geral h1 {
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  color: #5F9621; }
+
+#geral h2 {
+  font-size: 1.6em; }
+
+#geral h3 {
+  font-size: 1.4em; }
+
+#geral h4, #geral h5, #geral h6 {
+  font-size: 1.1em; }
+
+/* fim Paragrafo - link - titulos */
+#wrapper {
+  max-width: 100%;
+  width: 100%; }
+
+#geral #banner {
+  margin-top: 0; }
+
+/* ---------- Main navigation ---------- */
+#navigation {
+  font-family: 'gotham_bookregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.1em;
+  background: #f2f2f2 url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/fundo-menu-branco.png) repeat-x 0 0;
+  min-height: 30px;
+  z-index: 2;
+  border-top: 1px solid #b6b5a4;
+  height: 30px; }
+
+#navigation li {
+  position: static;
+  display: inline-block !important;
+  border-left: solid 1px #fff;
+  -webkit-box-shadow: inset 1px 0px 0px 0px #777;
+  -moz-box-shadow: inset 1px 0px 0px 0px #777;
+  box-shadow: inset 1px 0px 0px 0px #777; }
+
+#navigation li:first-child {
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+#navigation a {
+  color: #777;
+  font-weight: normal; }
+
+#navigation .selected a, #navigation li.hover a, #navigation a:hover, #navigation a:focus, #navigation .child-menu li a, #navigation .yui3-dd-dragging, .lfr-navigation-proxy {
+  background: none;
+  color: #000;
+  text-shadow: none;
+  text-shadow: 0px 0px 2px #fff; }
+
+#navigation li.hover a, #navigation a:hover {
+  color: #5F9621;
+  text-shadow: 0px 0px 2px #cec; }
+
+#navigation li.hover .child-menu {
+  background: #f2f2f2 url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/separador-menu.png) repeat-y;
+  display: block !important;
+  width: 960px; }
+
+#navigation .child-menu {
+  left: 0;
+  margin-top: 0;
+  padding: 10px 0;
+  position: relative;
+  width: 960px; }
+
+#navigation .child-menu li {
+  border-width: 0;
+  float: none;
+  border-left: 0;
+  border-top: 1px solid #c3c3c3;
+  display: list-item !important;
+  margin: 0 0 0 23px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-align: right;
+  width: 205px;
+  font-style: normal; }
+
+#navigation .child-menu li a {
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/seta-menu.png) no-repeat center right;
+  border-top: 1px solid #fff;
+  color: #777;
+  padding: 5px 15px;
+  width: 173px;
+  text-shadow: 0px 0px 0px; }
+
+#navigation .child-menu .menu-principal_1,
+#navigation .child-menu .menu-principal_1 a {
+  border-top: 0; }
+
+#navigation .child-menu li a:hover, #navigation li a.active {
+  background-color: #f2f2f2;
+  color: #5F9621;
+  text-shadow: 0px 0px 2px #cec; }
+
+#navigation, #navigation a, .portlet-topper, .portlet {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+
+.modify-pages li {
+  position: static; }
+
+/* ---------- Conteúdo relacionado ---------- */
+#navigation .child-menu .conteudo-relacionado {
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/bg_megamenu.png) repeat-y;
+  border: 0;
+  float: right;
+  position: relative;
+  width: 708px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-principal {
+  float: left;
+  min-height: 100px;
+  padding: 10px 20px;
+  width: 240px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-principal .mega-image-feature {
+  height: 130px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  width: 245px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-principal img {
+  width: 245px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-principal p {
+  color: #777;
+  text-align: justify; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-principal a {
+  background: #9f0017;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 90px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-secundario {
+  color: #777;
+  float: left;
+  min-height: 100px;
+  padding: 10px 0 10px 25px;
+  text-align: justify;
+  width: 370px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-secundario h3 {
+  color: #000;
+  font-size: 1.4em;
+  clip: inherit;
+  position: static;
+  margin: 5px 0;
+  text-align: left; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-secundario .mega-image {
+  height: 135px;
+  margin: 10px 0 0 30px;
+  padding: 0;
+  overflow: hidden; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-secundario .mega-image li {
+  border-top: 0;
+  display: inline !important;
+  float: left;
+  margin: 0 20px 10px 0;
+  padding: 0;
+  width: 145px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-secundario .mega-image li a {
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 145px; }
+
+#navigation .child-menu .conteudo-relacionado .destaque-secundario .mega-image li a img {
+  width: 145px; }
+
+#navigation .child-menu li:first-child,
+#navigation .child-menu li:first-child a {
+  border-top: 0; }
+
+/* ---------- Portlet wrapper and icons ---------- */
+.portlet {
+  background-color: #f9f9f9;
+  border: 0px solid #737373;
+  padding: 0px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px; }
+
+.portlet-modificado .portlet {
+  border: 1px solid #D6D6D6;
+  padding: 3px; }
+
+.portlet-modificado .portlet-title {
+  background: none; }
+
+.portlet-topper {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 8px 0px;
+  font-size: 1em;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.portlet-modificado .portlet-topper {
+  border: solid 1px #A3A3A3;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  -webkit-box-shadow: 0px 1px 0px 0px #FDFDFD;
+  -moz-box-shadow: 0px 1px 0px 0px #FDFDFD;
+  box-shadow: 0px 1px 0px 0px #FDFDFD;
+  margin: 5px 15px; }
+
+.portlet-title {
+  float: none;
+  font-size: 2em;
+  font-style: italic;
+  color: #999;
+  margin-left: 0px;
+  min-width: 10%;
+  padding: 3px 0px 5px 10px;
+  text-shadow: none;
+  background: #efefef;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px; }
+
+.portlet-modificado .portlet-title {
+  float: none;
+  font-weight: normal;
+  min-width: 50%;
+  padding: 0px;
+  font-size: 1.8em;
+  font-style: italic;
+  margin-left: 0px; }
+
+.portlet-title img {
+  display: none; }
+
+/* -- Ajustes no menu -- */
+#navigation li.selected a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+#navigation .child-menu .selected a {
+  background: none; }
+
+/* --- Barra Superior --- */
+#topo, #sombra-topo, #barra-superior {
+  margin: 0 auto;
+  width: 100%;
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/fundo-topo.png) repeat-x 0 0;
+  position: relative;
+  -webkit-box-shadow: 4px 0px 6px -5px black;
+  -moz-box-shadow: 4px 0px 6px -5px black;
+  box-shadow: 4px 0px 6px -5px black; }
+
+#sombra-topo, #barra-superior {
+  width: 960px; }
+
+#sombra-topo {
+  height: 64px;
+  -webkit-box-shadow: -4px 0px 6px -5px black;
+  -moz-box-shadow: -4px 0px 6px -5px black;
+  box-shadow: -4px 0px 6px -5px black; }
+
+#rss img {
+  margin: -9px 5px 0 8px; }
+
+#facebook img, #twitter img, #youtube img, #mais img {
+  margin-right: 5px; }
+
+#barra-superior ul {
+  list-style: none;
+  background: none;
+  margin: 0px; }
+
+#barra-superior ul li {
+  display: inline; }
+
+#barra-superior #barra-fale li a {
+  text-decoration: none; }
+
+#barra-compartilhe {
+  float: left;
+  height: 33px; }
+
+#barra-fale {
+  font-family: 'gotham_bookregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2em;
+  float: left;
+  padding: 12px 0 0 8px; }
+
+.nao-italico {
+  font-style: normal; }
+
+#barra-acessibilidade {
+  float: right;
+  padding: 12px 8px 0 8px; }
+
+#barra-acessibilidade li {
+  margin-right: 7px; }
+
+#barra-bandeiras {
+  display: inline;
+  float: right; }
+
+#barra-bandeiras, #barra-bandeiras a, #barra-bandeiras li:hover, #barra-bandeiras li {
+  background: none !important;
+  padding: 0px;
+  border: none !important;
+  -webkit-box-shadow: 0px 0px 0px 0px !important;
+  -moz-box-shadow: 0px 0px 0px 0px !important;
+  box-shadow: 0px 0px 0px 0px !important; }
+
+#barra-bandeiras span {
+  margin: 0px 1px 0;
+  position: relative;
+  top: 3px; }
+
+/* -- Menu Secundario -- */
+#menu-secundario {
+  z-index: 1;
+  position: absolute;
+  top: 64px; }
+
+#menu-secundario ul {
+  background: #619622 url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/fundo-menu-verde.png) repeat-x 0 0;
+  width: 960px;
+  clear: both;
+  color: #fff;
+  margin: 0 auto 0px;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid #b6b5a4;
+  height: 30px; }
+
+#menu-secundario ul li {
+  list-style: none;
+  display: inline-block;
+  padding-top: 6px; }
+
+#menu-secundario ul li:first-child {
+  padding-left: 15px; }
+
+#menu-secundario a {
+  color: #fff;
+  font-family: 'gotham_bookregular', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.1em;
+  margin: 0px 1px;
+  padding: 3px 5px 0px;
+  text-decoration: none;
+  font-style: italic;
+  transition: color 1s; }
+
+#menu-secundario a:hover {
+  text-shadow: 0px 0px 2px #cec;
+  color: #f2fff2; }
+
+/* -- Ajustes para o topo -- */
+.site-title {
+  margin: 0px;
+  z-index: 1;
+  position: relative; }
+
+#content {
+  width: 960px;
+  margin: 0px auto 0; }
+
+.site-breadcrumbs {
+  margin: 0px; }
+
+/* -- Banner -- */
+.banner_customizado {
+  height: 450px;
+  margin: 0 auto -550px; }
+
+.banner_customizado h1 {
+  float: left; }
+
+#heading {
+  margin: 0px auto 0px;
+  width: 960px;
+  padding-top: 30px; }
+
+.banner_customizado {
+  position: relative; }
+  .banner_customizado .tarja {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    bottom: 0;
+    position: absolute;
+    width: 100%; }
+    .banner_customizado .tarja h2 {
+      font-family: 'gotham_mediumregular', Arial, sans-serif;
+      font-size: 3.8em;
+      margin: 0px auto;
+      width: 920px;
+      position: relative;
+      line-height: 45px;
+      text-shadow: 1px -1px 2px black;
+      clear: left;
+      padding: 10px 0; }
+      .banner_customizado .tarja h2 .link_banner {
+        color: #fff;
+        font-style: italic;
+        font-weight: normal;
+        text-decoration: none;
+        text-shadow: 1px -1px 2px black;
+        transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -webkit-transition: color 0.5s;
+        -o-transition: color 0.5s; }
+        .banner_customizado .tarja h2 .link_banner:hover {
+          color: #5F9621; }
+
+.banner-separator {
+  margin: 560px auto 0 !important; }
+
+/* -- Classe customizada do hook -- */
+.asset-title.asset-title-custom {
+  display: none; }
+
+/* -- Portlets customizados -- */
+.portlet-destaques .portlet {
+  background: white;
+  border: 1px solid #d6d6d6;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -moz-border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 6px 6px;
+  padding: 0; }
+
+.portlet-destaques .portlet-topper {
+  border: none;
+  margin: 0;
+  z-index: 1; }
+
+.portlet-destaques .asset-title {
+  display: none; }
+
+.portlet-destaques .asset-title.asset-title-custom {
+  display: block; }
+
+.portlet-destaques .asset-title.asset-title-custom {
+  border: 0;
+  margin: 0;
+  padding: 5px 20px 8px 20px; }
+
+.portlet-destaques .asset-title.asset-title-custom a {
+  color: #000; }
+
+.portlet-destaques .asset-summary p {
+  color: #454545;
+  padding: 0 20px 8px 20px; }
+
+.portlet-destaques .portlet-title {
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/seta-titulo.png) no-repeat left;
+  color: #fff !important;
+  float: right;
+  font-size: 16px;
+  min-width: 10%;
+  margin-top: -3px;
+  padding: 5px 10px 5px 15px; }
+
+.ie .portlet-destaques .portlet-title {
+  margin-top: -4px; }
+
+.portlet-destaques .asset-title a img,
+.portlet-destaques .portlet-title span img {
+  display: none; }
+
+.portlet-destaques .portlet-content {
+  padding: 0; }
+
+.portlet-destaques .asset-content {
+  margin: 0; }
+
+.portlet-destaques .asset-summary {
+  top: -29px;
+  position: relative;
+  margin-bottom: -29px;
+  min-height: 345px; }
+
+.portlet-destaques .asset-small-image {
+  float: initial;
+  padding: 0;
+  width: 311px;
+  overflow: hidden;
+  height: 250px; }
+
+.firefox .portlet-destaques .asset-small-image {
+  margin-bottom: 5px; }
+
+.ie .portlet-destaques .asset-small-image {
+  margin-bottom: 5px; }
+
+.portlet-destaques .asset-more {
+  padding: 5px 20px 0 20px;
+  /* top: -29px; */
+  position: relative; }
+
+.portlet-destaques .asset-more a {
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/mais-info.png) no-repeat right;
+  color: #000;
+  font-size: 1.2em;
+  padding-right: 32px;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.portlet-destaques .asset-more a:hover {
+  text-decoration: underline; }
+
+.portlet-destaques .final-separator {
+  margin-bottom: 10px; }
+
+.portlet-destaques .aui-form {
+  float: left;
+  margin: 215px 0 0 10px;
+  position: absolute; }
+
+.portlet-destaques .add-asset-selector {
+  margin-bottom: 0;
+  overflow: initial;
+  z-index: 12;
+  position: relative;
+  clear: both; }
+
+.portlet-destaques .lfr-meta-actions.asset-actions {
+  z-index: 10;
+  position: relative;
+  float: left;
+  top: 222px;
+  left: 252px; }
+
+.portlet-destaques .lfr-meta-actions.asset-actions span a {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000; }
+
+.portlet-destaques.portlet-destaques-space .asset-small-image {
+  width: 312px; }
+
+/* portlets especificos da home */
+.portlet-redes-sociais .portlet {
+  background: #efefef; }
+
+.portlet-redes-sociais .portlet-title {
+  color: #000; }
+
+.portlet-redes-sociais .portlet-content {
+  padding-top: 0px;
+  padding-bottom: 5px; }
+
+.portlet-redes-sociais p {
+  margin-bottom: 5px; }
+
+.portlet-aninhado-home {
+  background-color: #EFEFEF;
+  border: 1px solid #D6D6D6;
+  margin: 0px;
+  padding: 0px; }
+
+.portlet-aninhado-home .portlet-column-content {
+  padding: 0px; }
+
+.portlet-mini-banners {
+  background: none;
+  padding-left: 10px; }
+
+.portlet-mini-banners .asset-content {
+  margin: 10px 0px 0px !important; }
+
+.portlet-mini-banners .mini-banners {
+  margin: 0px;
+  list-style: none; }
+
+.portlet-mini-banners .mini-banners li {
+  display: inline-block;
+  margin: 3px 5px; }
+
+.portlet-mini-banners .mini-banners a img {
+  height: 70px;
+  width: 135px; }
+
+.portlet-mini-banners .final-separator {
+  margin-bottom: 0px; }
+
+/* portlet noticias em destaque */
+.portlet-noticias-em-destaque .portlet {
+  border: none;
+  background: none;
+  margin-bottom: 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px; }
+
+.portlet-noticias-em-destaque .asset-title a img {
+  display: none; }
+
+.portlet-noticias-em-destaque .portlet-title {
+  color: #000; }
+
+.portlet-noticias-em-destaque .asset-title {
+  font-size: 1.1em;
+  border-bottom: none;
+  margin-bottom: 0px;
+  margin-right: 8px;
+  margin-top: 0px;
+  color: #838383; }
+
+.portlet-noticias-em-destaque .asset-abstract {
+  font-style: italic;
+  margin-left: 4px;
+  font-size: 1em;
+  font-weight: bold; }
+
+.portlet-noticias-em-destaque .asset-abstract a {
+  color: #393939; }
+
+.portlet-noticias-em-destaque .asset-content {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #189555;
+  font-weight: bold; }
+
+.portlet-noticias-em-destaque .portlet-content {
+  padding-top: 5px; }
+
+.portlet-noticias-em-destaque .asset-more {
+  display: none; }
+
+.portlet-noticias-em-destaque .asset-metadata {
+  margin-left: 0px;
+  margin-bottom: 10px;
+  font-size: 0.9em; }
+
+.portlet-noticias-em-destaque .asset-metadata a {
+  text-decoration: none; }
+
+.portlet-noticias-em-destaque .asset-metadata a:hover {
+  text-decoration: underline; }
+
+.portlet-noticias-em-destaque .final-separator {
+  margin-bottom: 0px; }
+
+.portlet-noticias-em-destaque li.title-list {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0; }
+
+.portlet-noticias-em-destaque .taglib-text {
+  text-decoration: none; }
+
+.portlet-noticias-em-destaque li.title-list a:hover {
+  text-decoration: underline !important; }
+
+.portlet-noticias-em-destaque .title-list img {
+  display: none; }
+
+/******************* NOTÍCIAS INTERNAS ****************/
+.portlet-noticias-em-destaque a:hover {
+  text-shadow: 0 0 0 #ffffff; }
+
+.portlet-noticias-em-destaque .asset-full-content p {
+  color: #393939;
+  font-weight: normal; }
+
+.portlet-noticias-em-destaque .asset-full-content div {
+  color: #393939;
+  font-weight: normal; }
+
+.portlet-noticias-em-destaque .asset-small-image {
+  display: none; }
+
+/* portlet A Cultura */
+.portlet-a-cultura .portlet {
+  background: #467d05 url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/fundo-a-cultura.png) repeat-x top left;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  border: none;
+  color: #ffffff;
+  font-style: italic; }
+
+.portlet-a-cultura .portlet-title {
+  color: #fff; }
+
+.portlet-a-cultura .asset-more a {
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/mais-info-verde.png) no-repeat right;
+  padding-right: 32px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 1.2em; }
+
+.portlet-a-cultura .portlet-topper {
+  border: solid 1px #2D5401;
+  border-top: 0;
+  border-left: none;
+  border-right: 0;
+  -webkit-box-shadow: 0 1px 0 0 #D7FCAE;
+  -moz-box-shadow: 0 1px 0 0 #D7FCAE;
+  box-shadow: 0 1px 0 0 #D7FCAE; }
+
+.portlet-a-cultura div.asset-small-image {
+  float: left;
+  padding-left: 0px;
+  width: 260px;
+  height: 80px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc; }
+
+.portlet-a-cultura .asset-small-image img {
+  float: none;
+  padding-left: 0px;
+  width: 260px;
+  border: none;
+  height: 80px; }
+
+.portlet-a-cultura .asset-summary {
+  margin-bottom: 20px; }
+
+.portlet-a-cultura .asset-title {
+  display: none; }
+
+.portlet-a-cultura .asset-content {
+  margin-left: 5px; }
+
+.portlet-a-cultura .asset-abstract .asset-content p {
+  width: 260px; }
+
+.portlet-a-cultura .final-separator {
+  margin-bottom: 0px; }
+
+.portlet-a-cultura .portlet-content {
+  padding-bottom: 0px; }
+
+.portlet-a-cultura-home .portlet {
+  min-height: 230px; }
+
+/* portlet por dentro do ministério */
+.portlet-por-dentro-do-ministerio .portlet {
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  border: 1px solid #D6D6D6;
+  color: #393939;
+  font-style: italic;
+  padding: 0px; }
+
+.portlet-por-dentro-do-ministerio .asset-more a {
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/mais-info.png) no-repeat right;
+  color: #000;
+  font-size: 1.2em;
+  padding-right: 32px;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.portlet-por-dentro-do-ministerio .portlet-topper {
+  border: solid 1px #CDE3D7;
+  border-top: 0;
+  border-left: none;
+  border-right: 0;
+  background: #EFEFEF;
+  margin: 0px;
+  padding: 10px 10px 10px 15px;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px; }
+
+.portlet-por-dentro-do-ministerio div.asset-small-image {
+  float: left;
+  padding-left: 0px;
+  width: 260px;
+  height: 80px;
+  margin-bottom: 10px;
+  border: 1px solid #7E7F81;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #ffffff;
+  -moz-box-shadow: inset 0px 0px 0px 1px #ffffff;
+  box-shadow: inset 0px 0px 0px 1px #ffffff; }
+
+.portlet-por-dentro-do-ministerio .portlet-title {
+  color: #000; }
+
+.portlet-por-dentro-do-ministerio div.asset-small-image img {
+  float: none;
+  padding-left: 0px;
+  width: 258px;
+  border: solid 1px white;
+  height: 78px; }
+
+.portlet-por-dentro-do-ministerio .asset-title {
+  display: none; }
+
+.portlet-por-dentro-do-ministerio .asset-abstract .asset-content p {
+  width: 260px; }
+
+.portlet-por-dentro-do-ministerio .asset-summary {
+  margin-bottom: 15px; }
+
+.portlet-por-dentro-do-ministerio .final-separator {
+  margin-bottom: 0px; }
+
+.portlet-por-dentro-do-ministerio .portlet-content {
+  padding-bottom: 0px; }
+
+.portlet-por-dentro-do-ministerio .asset-content {
+  margin-left: 10px; }
+
+.portlet-por-dentro-do-ministerio-home .portlet {
+  min-height: 234px; }
+
+/* portlet multimidia */
+.portlet-multimidia .portlet {
+  background: #9a9a9a url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/fundo-multimidia.png) repeat-x top left;
+  background-color: none;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  border: none;
+  color: #ffffff;
+  font-style: italic; }
+
+.portlet-multimidia .portlet-topper {
+  border: solid 1px #777777;
+  border-top: 0;
+  border-left: none;
+  border-right: 0;
+  -webkit-box-shadow: 0 1px 0 0 #E9E9E9;
+  -moz-box-shadow: 0 1px 0 0 #E9E9E9;
+  box-shadow: 0 1px 0 0 #E9E9E9; }
+
+.portlet-multimidia .portlet-title {
+  color: #ffffff; }
+
+.portlet-multimidia .botoes-multimidia {
+  width: 37px;
+  height: 100px;
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/botoes-multimidia.png) no-repeat top left;
+  float: right;
+  text-decoration: none; }
+
+.portlet-multimidia .taglib-header {
+  display: none; }
+
+.portlet-multimidia .asset-content {
+  margin-left: 20px;
+  margin-bottom: 0px; }
+
+.portlet-multimidia .texto-multimidia {
+  margin-top: 10px;
+  margin-bottom: -2px; }
+
+.portlet-multimidia .final-separator {
+  margin-bottom: 0px; }
+
+.portlet-multimidia .portlet-content {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.portlet-multimidia-home .portlet {
+  min-height: 230px; }
+
+/* Layout de paginas internas */
+.breadcrumbs-horizontal {
+  background: #fff;
+  padding: 40px 0px 5px;
+  margin: 0px; }
+
+.breadcrumbs-horizontal li {
+  background: url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/seta-breadcrumb.png) no-repeat 100% 50%; }
+
+.breadcrumbs a {
+  font-size: 1.3em;
+  color: #787878;
+  font-weight: normal;
+  font-style: italic;
+  text-decoration: none; }
+
+.breadcrumbs-horizontal .last a, .aui-tree-node-selected a {
+  color: #000; }
+
+.com-sombra {
+  width: 900px !important;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px -1px black;
+  -moz-box-shadow: 0px 0px 5px -1px black;
+  box-shadow: 0px 0px 5px -1px black;
+  padding: 0 30px 10px; }
+
+.com-sombra #menu-secundario {
+  margin-left: -30px; }
+
+/* ---------- Menu icones ---------- */
+.icones {
+  font-family: 'gotham_bookregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+.botao_lupa {
+  background: url("http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/icones_minc.png") no-repeat right 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  clear: both;
+  display: block;
+  float: right;
+  height: 36px;
+  margin-bottom: 3px;
+  padding-left: 38px;
+  overflow: hidden;
+  width: 0;
+  -moz-transition: all;
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -moz-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  -ms-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  .botao_lupa div {
+    opacity: 0;
+    height: 35px;
+    margin: 5px 10px;
+    width: 100px; }
+  .botao_lupa:hover {
+    color: #000;
+    background-color: white;
+    padding-left: 0;
+    text-shadow: 0px 1px 1px #ccc;
+    width: 205px; }
+    .botao_lupa:hover div {
+      opacity: 1;
+      width: 205px;
+      -moz-transition: all;
+      -webkit-transition: all;
+      -o-transition: all;
+      transition: all;
+      -moz-transition-duration: 500ms;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      -moz-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+.botao_newsletter {
+  background: url("http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/icones_minc.png") no-repeat right -96px;
+  background-color: rgba(255, 255, 255, 0.3);
+  clear: both;
+  display: block;
+  float: right;
+  height: 36px;
+  margin-bottom: 3px;
+  padding-left: 38px;
+  overflow: hidden;
+  width: 0;
+  -moz-transition: all;
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -moz-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  -ms-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  .botao_newsletter div {
+    opacity: 0;
+    height: 35px;
+    margin: 5px 10px;
+    width: 100px; }
+  .botao_newsletter:hover {
+    color: #000;
+    background-color: white;
+    padding-left: 0;
+    text-shadow: 0px 1px 1px #ccc;
+    width: 205px; }
+    .botao_newsletter:hover div {
+      opacity: 1;
+      width: 205px;
+      -moz-transition: all;
+      -webkit-transition: all;
+      -o-transition: all;
+      transition: all;
+      -moz-transition-duration: 500ms;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      -moz-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+.botao_iphoneipad {
+  background: url("http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/icones_minc.png") no-repeat right -96px;
+  background-color: rgba(255, 255, 255, 0.3);
+  clear: both;
+  display: block;
+  float: right;
+  height: 36px;
+  margin-bottom: 3px;
+  padding-left: 38px;
+  overflow: hidden;
+  width: 0;
+  -moz-transition: all;
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -moz-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  -ms-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  .botao_iphoneipad div {
+    opacity: 0;
+    height: 35px;
+    margin: 5px 10px;
+    width: 100px; }
+  .botao_iphoneipad:hover {
+    color: #000;
+    background-color: white;
+    padding-left: 0;
+    text-shadow: 0px 1px 1px #ccc;
+    width: 205px; }
+    .botao_iphoneipad:hover div {
+      opacity: 1;
+      width: 205px;
+      -moz-transition: all;
+      -webkit-transition: all;
+      -o-transition: all;
+      transition: all;
+      -moz-transition-duration: 500ms;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      -moz-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+.botao_salicweb {
+  background: url("http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/icones_minc.png") no-repeat right -75px;
+  background-color: rgba(255, 255, 255, 0.3);
+  clear: both;
+  display: block;
+  float: right;
+  height: 36px;
+  margin-bottom: 3px;
+  padding-left: 38px;
+  overflow: hidden;
+  width: 0;
+  -moz-transition: all;
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -moz-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  -ms-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  .botao_salicweb div {
+    opacity: 0;
+    height: 35px;
+    margin: 5px 10px;
+    width: 100px; }
+  .botao_salicweb:hover {
+    color: #000;
+    background-color: white;
+    padding-left: 0;
+    text-shadow: 0px 1px 1px #ccc;
+    width: 205px; }
+    .botao_salicweb:hover div {
+      opacity: 1;
+      width: 205px;
+      -moz-transition: all;
+      -webkit-transition: all;
+      -o-transition: all;
+      transition: all;
+      -moz-transition-duration: 500ms;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      -moz-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+.botao_editais {
+  background: url("http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/icones_minc.png") no-repeat right -35px;
+  background-color: rgba(255, 255, 255, 0.3);
+  clear: both;
+  display: block;
+  float: right;
+  height: 36px;
+  margin-bottom: 3px;
+  padding-left: 38px;
+  overflow: hidden;
+  width: 0;
+  -moz-transition: all;
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -moz-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  -ms-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  .botao_editais div {
+    opacity: 0;
+    height: 35px;
+    margin: 5px 10px;
+    width: 100px; }
+  .botao_editais:hover {
+    color: #000;
+    background-color: white;
+    padding-left: 0;
+    text-shadow: 0px 1px 1px #ccc;
+    width: 205px; }
+    .botao_editais:hover div {
+      opacity: 1;
+      width: 205px;
+      -moz-transition: all;
+      -webkit-transition: all;
+      -o-transition: all;
+      transition: all;
+      -moz-transition-duration: 500ms;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      -moz-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+.botao_antena {
+  background: url("http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/icones_minc.png") no-repeat right bottom;
+  background-color: rgba(255, 255, 255, 0.3);
+  clear: both;
+  display: block;
+  float: right;
+  height: 36px;
+  margin-bottom: 3px;
+  padding-left: 38px;
+  overflow: hidden;
+  width: 0;
+  -moz-transition: all;
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -moz-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  -ms-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  .botao_antena div {
+    opacity: 0;
+    height: 35px;
+    margin: 5px 10px;
+    width: 100px; }
+  .botao_antena:hover {
+    color: #000;
+    background-color: white;
+    padding-left: 0;
+    text-shadow: 0px 1px 1px #ccc;
+    width: 205px; }
+    .botao_antena:hover div {
+      opacity: 1;
+      width: 205px;
+      -moz-transition: all;
+      -webkit-transition: all;
+      -o-transition: all;
+      transition: all;
+      -moz-transition-duration: 500ms;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      -moz-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+.icones {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  z-index: 1; }
+
+/* comentarios zebrados */
+.taglib-discussion .lfr-discussion.last {
+  border-bottom-width: 1px; }
+
+.lfr-discussion:nth-child(odd) {
+  background-color: #dffbbe;
+  border: none;
+  padding: 10px; }
+
+.lfr-discussion:nth-child(even) {
+  border: 1px solid #dddddd;
+  padding: 10px; }
+
+.taglib-discussion .lfr-discussion-body {
+  width: 100%; }
+
+.taglib-discussion .lfr-discussion-details .taglib-user-display .user-profile-image {
+  display: none; }
+
+.taglib-discussion .lfr-discussion-details {
+  width: auto; }
+
+.portlet-asset-publisher .asset-full-content.show-asset-title .asset-content {
+  margin-left: 10px; }
+
+/*---- ocultando botão voltar do asset publisher ----*/
+.portlet-asset-publisher .header-back-to {
+  display: none; }
+
+/*---- fim ----*/
+.taglib-user-display .user-details {
+  margin-top: 0px; }
+
+/* ---------- Portlet de compartilhe das páginas internas ---------- */
+.portlet-compartilhe .portlet {
+  border: none; }
+
+.portlet-compartilhe .portlet-topper {
+  border: none;
+  font-size: 0.9em; }
+
+/*---- portlet de audio ---*/
+.portlet_audio h2 {
+  color: #6d9f30;
+  font: italic 1.6em/0 "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; }
+
+.portlet_audio h3 {
+  color: gray;
+  font: italic 1.4em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; }
+
+.portlet_audio p {
+  font-size: 20px;
+  color: silver; }
+
+/*---- portlet navigation ----*/
+.portlet-navigation .portlet-title {
+  font-size: 1.6em;
+  letter-spacing: normal;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-style: normal;
+  background: none; }
+
+.portlet-navigation .portlet-topper {
+  border-bottom: none;
+  margin-top: 8px; }
+
+.portlet-navigation .portlet {
+  border: none;
+  background-color: #fff; }
+
+.portlet-navigation .portlet-content {
+  padding-top: 0px;
+  font-size: 1em; }
+
+.portlet-navigation .portlet-content a {
+  text-decoration: none;
+  color: #777; }
+
+.portlet-navigation .portlet-content a:hover {
+  color: #5F9621;
+  text-shadow: 0px 0px 2px #cec; }
+
+.portlet-navigation .nav-menu ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 5px 0px;
+  line-height: 17px; }
+
+.portlet-navigation .nav-menu li {
+  margin-top: 7px;
+  padding-top: 7px;
+  margin-bottom: 3px;
+  border-top: solid 1px #eee; }
+
+.portlet-navigation .nav-menu ul.level-1 {
+  text-indent: 0px; }
+
+.portlet-navigation .nav-menu ul.level-2 {
+  text-indent: 20px;
+  list-style-type: square;
+  list-style-position: inside; }
+
+.portlet-navigation .nav-menu li a.selected {
+  color: #5F9621; }
+
+/* ---- Botoes de links das secretarias ---- */
+.botoes_sec {
+  position: relative;
+  text-align: center;
+  list-style-type: none;
+  margin: 0px; }
+
+.botoes_sec li {
+  position: relative;
+  width: 195px;
+  font-size: 14px;
+  padding: 10px 0 10px;
+  text-align: center;
+  display: inline-block;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  margin: 5px;
+  background: #417e07 url(http://www.cultura.gov.br/minc-internet-lf6_1ga2-theme/images/minc/fundo-menu-verde.png;) repeat-x 0 0; }
+
+.botao_1 {
+  left: 0px; }
+
+.botao_3 {
+  right: 0px; }
+
+.botoes_sec li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff; }
+
+/******************* DESTAQUE PRINCIPAL DAS NOTÍCIAS INTERNAS ****************/
+.portlet-destaque-noticia .asset-small-image {
+  margin: 5px 0;
+  padding-left: 0;
+  width: 287px;
+  text-align: center; }
+
+.portlet-destaque-noticia .portlet-borderless-container {
+  background: #e2e1e1;
+  border-radius: 6px; }
+
+.portlet-destaque-noticia .asset-title {
+  display: none; }
+
+.portlet-destaque-noticia .asset-summary {
+  color: #222222;
+  font-size: 1.4em;
+  margin-left: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-style: italic; }
+
+.portlet-destaque-noticia .asset-content {
+  clear: right;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.portlet-destaque-noticia .asset-more {
+  float: right;
+  padding-bottom: 10px;
+  padding-right: 10px; }
+
+.portlet-destaque-noticia .asset-more a {
+  text-decoration: none; }
+
+/******************* DESTAQUE EM TEXTO DAS NOTÍCIAS INTERNAS ****************/
+.portlet-noticias-texto .asset-title img {
+  display: none; }
+
+.portlet-noticias-texto .asset-title {
+  border: none;
+  margin-bottom: 0.2em;
+  margin-top: 7px;
+  font-style: italic; }
+
+.portlet-noticias-texto ul.title-list {
+  float: left;
+  padding-left: 0px; }
+
+.portlet-noticias-texto .content {
+  margin: 3px;
+  float: left; }
+
+.portlet-noticias-texto .asset-more {
+  float: right; }
+
+.portlet-noticias-texto .asset-more a {
+  text-decoration: none; }
+
+.portlet-noticias-texto .portlet-borderless-container {
+  padding: 1px;
+  background: #fff;
+  overflow: hidden; }
+
+.portlet-noticias-texto li.title-list {
+  list-style-image: none;
+  float: left;
+  width: 132px;
+  margin-right: 10px;
+  padding: 5px 0 24px; }
+
+.portlet-noticias-texto li.title-list a {
+  color: #3c3c3c; }
+
+.portlet-asset-publisher .asset-content {
+  margin-left: 0px; }
+
+.asset-abstract {
+  margin-bottom: 10px; }
+
+/******************* DESTAQUE BANNERS DAS NOTÍCIAS INTERNAS ****************/
+.portlet-publicacoes .portlet-asset-publisher .asset-small-image {
+  width: 280px !important;
+  padding: 0px 12px 3px !important; }
+
+.portlet-publicacoes .asset-small-image {
+  float: left;
+  padding-right: 1em;
+  width: 125px; }
+
+.portlet-publicacoes .asset-title img {
+  display: none; }
+
+.portlet-publicacoes .asset-title {
+  border: none;
+  display: none; }
+
+.portlet-publicacoes .asset-summary {
+  margin: 0px 5px;
+  padding: 0;
+  width: 279px; }
+
+.portlet-publicacoes .asset-content {
+  margin: 3px; }
+
+.portlet-publicacoes .asset-more {
+  float: right; }
+
+.portlet-publicacoes .asset-more a {
+  text-decoration: none; }
+
+.portlet-publicacoes .portlet {
+  padding: 1px; }
+
+.portlet-publicacoes .portlet-body {
+  overflow: hidden; }
+
+.portlet-publicacoes .asset-abstract {
+  float: left;
+  padding-right: 13px;
+  width: 280px !important;
+  height: 130px; }
+
+.portlet-publicacoes .asset-content {
+  clear: none; }
+
+/******************* PORTLET INTERNO COMPARTILHE ****************/
+.portlet-modificado-compartilhe .portlet {
+  background: none !important;
+  border: none !important; }
+
+/******************* PORTLET AUDIO INTERNAS ****************/
+.portlet-modificado-audio h2 {
+  color: #189555;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin: 0; }
+
+.portlet-modificado-audio h3 {
+  color: #999;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: normal;
+  margin: -0.5em 0 1em 0; }
+
+.portlet-modificado-audio .portlet-content {
+  padding-top: 0; }
+
+/******************* PORTLET VIDEO INTERNAS ****************/
+.pt-video-internas h2 {
+  color: #189555;
+  font-weight: normal;
+  font-size: 1.1em;
+  font-style: italic;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  margin-top: 0px; }
+
+.pt-video-internas p {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #999; }
+
+.pt-video-internas .portlet-content {
+  padding-top: 0px; }
+
+/* ** PORTLET NOTICIAS EM DESTAQUE HOME - COLOCA BORDA DIREITA E TIRA IMAGEM ** */
+.portlet-noticias-em-destaque-home .portlet {
+  border-right: 1px solid #D6D6D6;
+  min-height: 375px; }
+
+.remove-img .asset-resource-info div img, .portlet-noticias-em-destaque-home .asset-small-image, .remove-img .asset-small-image .asset-small-image {
+  display: none; }
+
+.portlet-noticias-em-destaque-home .aui-form, .remove-form .aui-form {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0; }
+
+
+
