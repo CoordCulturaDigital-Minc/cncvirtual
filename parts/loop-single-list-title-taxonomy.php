@@ -4,10 +4,11 @@
             <h1>
                 <a href="<?php the_permalink();?>" title="<?php the_title_attribute();?>"><?php the_title();?></a>
             </h1>
-		<p><?php the_content(); /* hack para fazer apenas uma pequena alteracao, somente para a CNC Virtual  */ ?></p>
             <div class="clear"></div>
         </header>
-
+        <div class="clear">
+                <p><?php the_content(); /* hack para fazer apenas uma pequena alteracao, somente para a CNC Virtual  */ ?></p>
+        <div/>
         <div class="comments-number" title="<?php comments_number('nenhum comentário','1 comentário','% comentários');?>"><?php comments_number('0','1','%');?></div>
         <?php if (get_theme_option('use_evaluation')) : ?>
             <?php html::part('show_evaluation'); ?>
