@@ -9,7 +9,7 @@
         <div class="clear">
                 <p><?php the_content(); /* hack para fazer apenas uma pequena alteracao, somente para a CNC Virtual  */ ?></p>
         <div/>
-        <div class="comments-number" title="<?php comments_number('nenhum comentário','1 comentário','% comentários');?>"><?php comments_number('0','1','%');?></div>
+        <div class="comments-number" title="<?php comments_number('nenhum comentário','1 comentário','% comentários');?>"><?php comments_number('0','1','%');?></div><?php comments_number('Nenhum comentário', 'Comentário', 'Comentários'); ?>&nbsp;&nbsp;&nbsp; 
         <?php if (get_theme_option('use_evaluation')) : ?>
             <?php html::part('show_evaluation'); ?>
         <?php endif; ?>

@@ -23,7 +23,7 @@ $userVote = str_replace('_label_', 'label_', get_user_vote($postId));
 <?php if (is_user_logged_in()): ?>
     <div class="user_evaluation">
         <form id="object_evaluation">
-            <div class="object_evaluation_feedback" style="display: none; margin-right: 5px;"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/accept.png" alt="" /></div>
+            <div class="object_evaluation_feedback" style="display: none; margin-right: 5px;"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/accept.png" alt="" /><div style="float:right">&nbsp;Voto computado!</div></div>
             <input type="hidden" id="post_id" name="post_id" value="<?php the_ID(); ?>" />    	
             <?php foreach ($evaluationOptions as $key => $value) : ?>
                 <?php if (empty($value)) break; ?>
